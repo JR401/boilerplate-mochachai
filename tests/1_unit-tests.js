@@ -47,7 +47,6 @@ suite('Unit Tests', function () {
       assert.strictEqual(6 * '2', 12);
       assert.notStrictEqual([1, 'a', {}], [1, 'a', {}]);
     });
-    });
     // #7
     test('#deepEqual, #notDeepEqual', function () {
       assert.fail({ a: '1', b: 5 }, { b: 5, a: '1' }, "The order of keys doesn't matter");
