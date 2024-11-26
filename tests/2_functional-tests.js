@@ -39,7 +39,9 @@ suite('Functional Tests', function () {
         .request(server)
         .keepOpen()
         .put('/travellers')
-
+        .send({
+          "surname": []
+        })
         .end(function (err, res) {
           assert.fail();
 
