@@ -72,7 +72,6 @@ suite('Functional Tests with Zombie.js', function () {
   suiteSetup(function(done) {
     return browser.visit('/', done);
   });
-  
 
   suite('Headless browser', function () {
     test('should have a working "site" property', function() {
