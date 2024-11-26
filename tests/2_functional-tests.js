@@ -40,11 +40,14 @@ suite('Functional Tests', function () {
         .keepOpen()
         .put('/travellers')
         .send({
-          "surname": []
+          "name": ["Cristoforo"],
+          "surname": ["Colombo"]
         })
         .end(function (err, res) {
-          assert.fail();
-
+          assert.equal(res.status, 200);
+          assert.equal(res.type, 'application/json');
+          assert.equal(body.name, "Cristoforo");
+          assert.equal(body.surname, "Colombo");
           done();
         });
     });
