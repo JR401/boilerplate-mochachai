@@ -87,8 +87,7 @@ suite('Functional Tests with Zombie.js', function () {
         browser.assert.text('span#name', 'Cristoforo');
         browser.assert.text('span#surname', 'Colombo');
         browser.assert.element('span#dates', 1);
-    
-        done(); // It's an async test, so we have to call 'done()''
+        done();
       });
     });
     // #6
